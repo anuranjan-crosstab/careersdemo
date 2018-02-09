@@ -184,12 +184,6 @@
 	margin: 10px 10px 0 0
 }
 
-@media only screen and (max-width:600px) {
-	.jplist-panel {
-		display: none
-	}
-}
-
 .jplist-drop-down {
 	float: left;
 	height: 30px;
@@ -261,7 +255,8 @@
 	height: 30px;
 	line-height: 30px;
 	text-indent: 10px;
-	cursor: pointer
+	cursor: pointer;
+	font-weight: normal;
 }
 
 .jplist-drop-down ul li:hover {

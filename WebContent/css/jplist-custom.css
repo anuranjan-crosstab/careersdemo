@@ -248,6 +248,12 @@
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.jplist-panel {
+		padding-bottom: 20px;
+	}
+}
+
 .jplist-drop-down {
 	width: 16.66%;
 	border-radius: 30px;
@@ -269,6 +275,16 @@
 	}
 }
 
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.jplist-drop-down {
+		width: 50%;
+	}
+
+	.text-filter-box {
+		width: 50%;	
+	}
+}
+
 .jplist-panel input[type="text"] {
 	width: 155px;
 	font-size: 14px;
@@ -282,5 +298,11 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.jplist-panel input[type="text"] {
 		width: 125px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.jplist-panel input[type="text"] {
+		width: 140px;
 	}
 }
