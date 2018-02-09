@@ -579,13 +579,17 @@ height: 300px;
 	.content-details p{
 		font-size: 8px;
 		padding-top: 30%;
+		padding-left: 1em;
+  		padding-right: 1em;
 	}
 }
 
 @media only screen and (max-width : 640px) and (min-width: 300px) {
 	.content-details p{
-		font-size: 6px;
+		font-size: 7px;
 		padding-top: 40%;
+		padding-left: 1em;
+  		padding-right: 1em;
 	}
 }
 
@@ -1360,6 +1364,12 @@ div#OR {
 
 #section2description {
 	background-color: #ffffff80;
+}
+
+@media only screen and (max-width: 991px) {
+	#section2description {
+		overflow-x: auto;
+	}
 }
 
 #section2description .job {
