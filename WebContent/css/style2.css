@@ -1221,6 +1221,7 @@ div#OR {
 
 .test > video {
 	min-width: 100%;
+	object-fit: fill;
 }
 
 @media screen and (max-width: 767px) {
