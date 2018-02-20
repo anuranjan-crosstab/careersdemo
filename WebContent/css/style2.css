@@ -33,9 +33,10 @@ body {
 }
 
 .navbar-default.scrolled {
-	background-color: #ffffff;
+	background-color: #ffffffb3;
 	border-radius: 0;
 	height: 50px;
+	transition: background 350ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 
 .navbar-brand {
@@ -111,11 +112,13 @@ body {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
 	background-color: transparent;
 	color: #8CCE32;
+	font-weight: 600;
 }
 
 .scrolled.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
 	background-color: transparent;
 	color: #8CCE32;
+	font-weight: 600;
 }
 
 
