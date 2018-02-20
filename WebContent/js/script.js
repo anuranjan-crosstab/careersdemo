@@ -93,7 +93,7 @@ $(document).ready(function(){
 	$('#section1-arrow').click(function() {
 
 		$('html,body').animate({
-			scrollTop : $('#section2').offset().top - 50
+			scrollTop : $('#section2').offset().top
 		}, 'slow');
 
 	})
@@ -178,40 +178,7 @@ $(function() {
 											}
 										}
 									},
-									afterInit : function($self, paper, areas,
-										plots, options) {
-
-										paper.rect(190, 130, 0.2, 170).attr({
-											stroke : "#fff",
-											"stroke-width" : 1
-										});
-										var t = paper.text(190, 310, "USA",
-											paper.getFont("inherit", 500),
-											30);
-										t.attr({
-											fill : "#fff"
-										});
-										paper.rect(160, 70, 0.2, 170).attr({
-											stroke : "#fff",
-											"stroke-width" : 1
-										});
-										var t1 = paper.text(160, 250, "Canada",
-											paper.getFont("inherit", 500),
-											30);
-										t1.attr({
-											fill : "#fff"
-										});
-										paper.rect(690, 160, 0.2, 170).attr({
-											stroke : "#fff",
-											"stroke-width" : 1
-										});
-										var t2 = paper.text(690, 340, "India",
-											paper.getFont("inherit", 500),
-											30);
-										t2.attr({
-											fill : "#fff"
-										});
-									},
+									
 								},
 								// Customize some areas of the map
 								areas : {
@@ -234,7 +201,7 @@ $(function() {
 												$(
 													"#jobpostingsBody")
 												.html(
-													'<tr class="tbl-item"><td class="title">DGM - Business Development & Sales</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Noida">Noida</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Manager - Sales & Marketing (Domestic)</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Banglore">Banglore</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
+													'<tr class="tbl-item"><td class="title">DGM - Business Development & Sales</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Noida">Noida</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #80bb2d;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Manager - Sales & Marketing (Domestic)</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Banglore">Banglore</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #80bb2d;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
 
 												$(
 													'#demo')
@@ -280,6 +247,9 @@ $(function() {
 										attrs : {
 											fill : "#06425b"
 										},
+										tooltip : {
+											content : "<span style=\"font-weight:bold;\">India</span><br />"
+										},
 										attrsHover : {
 											fill : "#000000"
 										},
@@ -304,7 +274,7 @@ $(function() {
 												$(
 													"#jobpostingsBody")
 												.html(
-													'<tr class="tbl-item"><td class="title">Compliance Specialist</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Quality">Quality</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Business Analyst</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
+													'<tr class="tbl-item"><td class="title">Compliance Specialist</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Quality">Quality</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #80bb2d;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Business Analyst</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #80bb2d;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
 
 												$(
 													'#demo')
@@ -347,6 +317,9 @@ $(function() {
 										attrs : {
 											fill : "#06425b"
 										},
+										tooltip : {
+											content : "<span style=\"font-weight:bold;\">Canada</span><br />"
+										},
 										attrsHover : {
 											fill : "#000000"
 										}
@@ -371,7 +344,7 @@ $(function() {
 												$(
 													"#jobpostingsBody")
 												.html(
-													'<tr class="tbl-item"><td class="title">Learning & Development Manager</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Yardley">Yardley</td><td class="Corporate">Corporate</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Inside Sales Representative</td><td class="desc">An arch is a structure that spans a space and supports a load.</td><td class="Spokane">Spokane</td><td class="Allergy">Allergy</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
+													'<tr class="tbl-item"><td class="title">Learning & Development Manager</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Yardley">Yardley</td><td class="Corporate">Corporate</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #80bb2d;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Inside Sales Representative</td><td class="desc">An arch is a structure that spans a space and supports a load.</td><td class="Spokane">Spokane</td><td class="Allergy">Allergy</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #80bb2d;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
 
 												$(
 													'#demo')
@@ -415,6 +388,9 @@ $(function() {
 										},
 										attrs : {
 											fill : "#06425b"
+										},
+										tooltip : {
+											content : "<span style=\"font-weight:bold;\">United States</span><br />"
 										},
 										attrsHover : {
 											fill : "#000000"
@@ -740,32 +716,7 @@ $(function() {
 
 										}
 									}, 
-									'Salisbury' : {
-										type : "svg",
-										path :'M7.5,0C2.48,0,0,3.5,0,7.81S7.5,22,7.5,22,15,12.13,15,7.81,12.52,0,7.5,0Zm0,10.32a4,4,0,1,1,4-4A4,4,0,0,1,7.5,10.32Z',
-										width : 6,
-										height : 10,
-										latitude : 38.3607,
-										longitude : -75.5994,
-										eventHandlers : {
-											click : function() {
-												//alert("hello");
-											},
-										},
-										attrs : {
-											fill : "#80bb2d",
-											opacity : 1
-										},
-										tooltip : {
-											content : "<span style=\"font-weight:bold;\">Salisbury</span><br />"
-										},
-										attrsHover: {
-											fill: "orange",
-											stroke: '#f4f4e8',
-											"stroke-width": 0.5,
-
-										}
-									}, 
+									
 									'Yardley' : {
 										type : "svg",
 										path :'M7.5,0C2.48,0,0,3.5,0,7.81S7.5,22,7.5,22,15,12.13,15,7.81,12.52,0,7.5,0Zm0,10.32a4,4,0,1,1,4-4A4,4,0,0,1,7.5,10.32Z',
