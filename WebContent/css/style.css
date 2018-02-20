@@ -175,11 +175,24 @@ now override the 3.3 new styles for modern browsers & apply opacity
     }
 }
 
-/*@media only screen and (max-width: 767px) {
-	.item {
-		height: 100px;
+.carousel-control {
+	width: 5%;
+}
+
+.carousel-control.left {
+	background-image: none;
+}
+
+.carousel-control.right {
+	background-image: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.slider-background {
+		width: 100%;
+		min-height: 250px;
 	}
-}*/
+}
 
 .testi_slide_1 {
 	position: absolute;
@@ -301,18 +314,18 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 @media only screen and (max-width : 767px) {
 	.said_1 {
-		top: 31%;
+		top: 23%;
 		left: 14%;
 		width: 80%;
-		font-size: 8px;
+		font-size: 10px;
 		text-align: center;
 	}
 
 	.said_2 {
-		top: 71%;
+		top: 63%;
 		left: 14%;
 		width: 80%;
-		font-size: 8px;
+		font-size: 10px;
 		text-align: center;
 	}
 }
@@ -335,6 +348,16 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	}
 }
 
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+	.said_1 {
+		width: 65%;
+	}
+
+	.said_2 {
+		width: 65%;
+	}
+}
+
 .container.slider-slide-2 {
     position: absolute;
     bottom: 160px;
@@ -354,7 +377,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 @media only screen and (max-width : 767px) {
 	.container.slider-slide-2 {
-		bottom: 10px;
+		bottom: 20%;
 	}
 }
 
@@ -447,9 +470,9 @@ height: 300px;
 }
 
 @media only screen and (max-width : 767px) {
-	.values {
+/*	.values {
 		height: 200px;
-	}
+	}*/
 	.values-img {
 		height: 200px;
 	}
@@ -474,7 +497,8 @@ height: 300px;
 }
 
 .value-inner p {
-	text-align: justify;
+	text-align: left;
+	font-size: 18px;
 }
 
 
@@ -514,9 +538,9 @@ height: 300px;
 }
 
 @media only screen and (max-width : 767px) {
-	.content-image{
-		height: 200px;
-	}
+/*	.content-image{
+		height: 250px;
+	}*/
 }
 
 .content:hover .content-image{
@@ -583,10 +607,7 @@ height: 300px;
 
 @media only screen and (max-width : 767px) {
 	.content-details p{
-		font-size: 8px;
-		padding-top: 30%;
-		padding-left: 1em;
-  		padding-right: 1em;
+		display: none;
 	}
 }
 
@@ -619,7 +640,7 @@ height: 300px;
 
 @media only screen and (max-width : 767px) {
 	.content h2 {
-		font-size: 22px;
+		font-size: 25px;
 		text-transform: uppercase;
 		font-weight: 300;
 		margin-top: 10px;
@@ -632,7 +653,7 @@ height: 300px;
 }
 
 #footer {
-	background-color: #2b2b2b;
+	background-color: #3e3e3e;
 	color: #ffffff;
 	padding: 3rem 0 0 0;
 }
@@ -731,6 +752,19 @@ height: 300px;
 		position: relative;
 		margin: 0 auto;
 		width: 160px;
+	}
+}
+
+.social-linkedin img {
+	width: 60%;
+	cursor: pointer;
+}
+
+@media only screen and (max-width : 991px){
+	.social-linkedin img {
+		width: 40%;
+		margin-left: 30%;
+		margin-top: 4%;
 	}
 }
 
@@ -939,7 +973,7 @@ height: 300px;
 		-webkit-transition: color 200ms;
 }
 .contact .envelope .paper a:hover {
-		color: #EEE;
+		color: #0D3B9C;
 }
 .contact .envelope .paper a.call:hover .i {
 		border-color: #DDD;
@@ -971,7 +1005,7 @@ a.major {
 	text-align: center;
 	background-color: #1b1b1b;
 	padding: 10px 0 10px 0;
-	margin-top: 15px;
+	margin-top: 4%;
 }
 
 .footer-list ul li a {
@@ -1010,6 +1044,7 @@ li {
 }
 
 .contact-data {
+	visibility: hidden;
 	text-align: center;
 }
 
@@ -1379,7 +1414,7 @@ div#OR {
 }
 
 #section2description .job {
-	height: 500px;
+	height: 100%;
 }
 
 .job #myVideo {
@@ -1411,5 +1446,54 @@ div#OR {
 }
 
 /* Return to top start */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0D3B9C; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1%; /* Some padding */
+    border-radius: 50%;; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+    width: 5%;
+}
 
+@media screen and (max-width: 767px) {
+	#myBtn {
+		bottom: 10px;
+		right: 10px;
+		width: 12%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	#myBtn {
+		width: 7%;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	#myBtn {
+		width: 10%;
+		font-size: 50px;
+	}
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
 /* Return to top end */
+
+@media screen and (max-width: 767px) {
+	.carousel-indicators {
+		bottom: 0;
+	}
+	ol.carousel-indicators {
+		margin-bottom: 0;
+	}
+}

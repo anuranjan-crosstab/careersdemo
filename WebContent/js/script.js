@@ -1,4 +1,4 @@
-$('#myCarousel').carousel();
+$('#myCarousel').carousel({ pause: "false" });
 
 $(document).ready(function(){
 	$("#testimonial-slider").owlCarousel({
@@ -10,11 +10,10 @@ $(document).ready(function(){
 		pagination:true,
 		autoPlay:true
 	});
-});
+
 
 //$('#myModal').modal('show');
 
-$(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar"});   
 
@@ -39,11 +38,41 @@ $(document).ready(function(){
     });
     }  // End if
 });
-});
-
-$(document).ready(function(){
 	$(".testimonials").hide();
 	$(".testimonials").fadeIn(6000);
+
+/*	$('#goToHome').click(function() {
+
+		$('html,body').animate({
+			scrollTop : $('#section1').offset().top - 50
+		}, 'slow');
+
+	})
+
+
+	$('#goToJobMap').click(function() {
+
+		$('html,body').animate({
+			scrollTop : $('#section2').offset().top - 50
+		}, 'slow');
+
+	})
+	
+	$('#goToCoreValues').click(function() {
+
+		$('html,body').animate({
+			scrollTop : $('#section3').offset().top - 50
+		}, 'slow');
+
+	})
+
+	$('#goToEmpSpeak').click(function() {
+
+		$('html,body').animate({
+			scrollTop : $('#section4').offset().top - 50
+		}, 'slow');
+
+	})*/
 
 	$('#scrollToJobMap2').click(function() {
 
@@ -57,6 +86,14 @@ $(document).ready(function(){
 
 		$('html,body').animate({
 			scrollTop : $('.container-map').offset().top - 140
+		}, 'slow');
+
+	})
+
+	$('#section1-arrow').click(function() {
+
+		$('html,body').animate({
+			scrollTop : $('#section2').offset().top - 50
 		}, 'slow');
 
 	})
@@ -197,7 +234,7 @@ $(function() {
 												$(
 													"#jobpostingsBody")
 												.html(
-													'<tr class="tbl-item"><td class="jobcode">16602</td><td class="title">DGM - Business Development & Sales</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Noida">Noida</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td class="Dosage_Forms">Dosage Forms</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span></td></tr><tr class="tbl-item"><td class="jobcode">16654</td><td class="title">Manager - Sales & Marketing (Domestic)</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Banglore">Banglore</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td class="Generics">Generics</td><td><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span></td></tr>');
+													'<tr class="tbl-item"><td class="title">DGM - Business Development & Sales</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Noida">Noida</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Manager - Sales & Marketing (Domestic)</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Banglore">Banglore</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
 
 												$(
 													'#demo')
@@ -267,7 +304,7 @@ $(function() {
 												$(
 													"#jobpostingsBody")
 												.html(
-													'<tr class="tbl-item"><td class="jobcode">16496</td><td class="title">Compliance Specialist</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Quality">Quality</td><td class="DraxImage">DraxImage</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span></td></tr><tr class="tbl-item"><td class="jobcode">Montreal, </td><td class="title">Business Analyst</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td class="DraxImage">DraxImage</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span></td></tr>');
+													'<tr class="tbl-item"><td class="title">Compliance Specialist</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Quality">Quality</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Business Analyst</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Montreal">Montreal</td><td class="Sales_Marketing_n_Business_Development">Sales, Marketing & Business Development</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
 
 												$(
 													'#demo')
@@ -334,7 +371,7 @@ $(function() {
 												$(
 													"#jobpostingsBody")
 												.html(
-													'<tr class="tbl-item"><td class="jobcode">16450</td><td class="title">Learning & Development Manager</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Yardley">Yardley</td><td class="Pharmacovigilance">Pharmacovigilance</td><td class="Corporate">Corporate</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span></td></tr><tr class="tbl-item"><td class="jobcode">16533</td><td class="title">Inside Sales Representative</td><td class="desc">An arch is a structure that spans a space and supports a load.</td><td class="Spokane">Spokane</td><td class="Sales_Marketing_n_Business_Development">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Allergy">Allergy</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span></td></tr>');
+													'<tr class="tbl-item"><td class="title">Learning & Development Manager</td><td class="desc">A Short job-description telling all the main responsibilites and tasks related to this job.</td><td class="Yardley">Yardley</td><td class="Corporate">Corporate</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr><tr class="tbl-item"><td class="title">Inside Sales Representative</td><td class="desc">An arch is a structure that spans a space and supports a load.</td><td class="Spokane">Spokane</td><td class="Allergy">Allergy</td><td><span class="modalTrigger" style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-paper-plane"></i>&nbsp;Apply</span><br><span style="cursor: pointer; text-decoration: underline; color: #004d99;"><i class="fa fa-envelope"></i>&nbsp;Refer a friend</span></td></tr>');
 
 												$(
 													'#demo')
@@ -788,3 +825,51 @@ $(function() {
 
 });
 /* Map Script End */
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+$('#myBtn').click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+
+//$('.carousel').carousel({ pause: "false" });
+
+/*$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#section2');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.navbar-default').css('background-color', '#ffffff');
+       } else {
+          $('.navbar-default').css('background-color', 'transparent');
+       }
+   });
+});*/
+
+/*    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 100) { // check if user scrolled more than 50 from top of the browser window
+          $(".navbar-default").css("background-color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+        } else {
+          $(".navbar-default").css("background-color", "transparent"); // if not, change it back to transparent
+        }
+      });
+    });*/
+
+$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+});
