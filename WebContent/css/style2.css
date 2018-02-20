@@ -50,10 +50,10 @@ body {
     width: auto;
 }
 
-.scrolled.navbar-default .navbar-brand > img {
+/*.scrolled.navbar-default .navbar-brand > img {
     height: 60%;
     padding: 0 0 0 25px;
-}
+}*/
 
 .navbar-default .nav > li > a {
     padding-top: 30px;
