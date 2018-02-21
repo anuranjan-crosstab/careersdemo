@@ -410,8 +410,8 @@ body {
 @media screen and (min-width: 768px) {
 	#progressbar .li1, #progressbar .li2, #progressbar .li3, #progressbar .li4, 
 	#progressbar .li5, #progressbar .li6 {
-		font-weight: bolder;
+		font-weight: 500;
 		text-shadow: 1px 1px black;
-		font-size: larger;
+		font-size: medium;
 	}
 }
