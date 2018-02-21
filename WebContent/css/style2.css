@@ -1299,3 +1299,14 @@ height: 100%;
     width: 100%;
     display: inline-flex;
 }
+
+/* Form message */
+#success_message {
+	display: none;
+}
+
+.mod-head {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	color: #80bb2d;
+}
