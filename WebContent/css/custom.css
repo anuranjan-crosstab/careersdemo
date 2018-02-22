@@ -415,3 +415,5 @@ body {
 		font-size: medium;
 	}
 }
+
+#success_message{ display: none;}
