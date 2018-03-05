@@ -123,12 +123,12 @@
 						                        },
 						                        "in": {
 						                            cssClass: "zoomButton zoomIn",
-						                            content: "&#128269;+",
+						                            content: "+",
 						                            title: "Zoom in"
 						                        },
 						                        "out": {
 						                            cssClass: "zoomButton zoomOut",
-						                            content: "&#128269;-", // minus sign
+						                            content: "-", // minus sign
 						                            title: "Zoom out"
 						                        }
 						                    },

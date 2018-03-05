@@ -1394,8 +1394,12 @@ div#OR {
 	font-weight: 200;
 }
 
-#section3 {
+#demo a {
+	color: #ffffff;
+}
 
+#demo a:hover {
+	color: #ffffff;
 }
 
 /* Return to top start */
