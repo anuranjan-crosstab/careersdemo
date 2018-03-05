@@ -1367,6 +1367,7 @@ div#OR {
 
 #section2description .job {
 	height: 100%;
+	background-image: url("../images/job-description1.jpg");
 }
 
 /*.job #myVideo {
@@ -1389,12 +1390,16 @@ div#OR {
 
 #demo #scrollToJobMap3 {
 	text-align: center;
-	border-bottom: 1px #23b1ec dotted;
+	border-bottom: 1px #ffffff dotted;
 	font-weight: 200;
 }
 
-#section3 {
+#demo a {
+	color: #ffffff;
+}
 
+#demo a:hover {
+	color: #ffffff;
 }
 
 /* Return to top start */
@@ -1578,4 +1583,17 @@ transform:rotateY(180deg);
 
 .carousel-inner {
 	height: 100vh;
+}
+
+.demo-tbl {
+	box-shadow: 0 0 15px 1px rgba(236, 236, 236, 0.4);
+}
+
+.jplist-drop-down {
+	box-shadow: 0 0 15px 1px rgba(236, 236, 236, 0.4);
+}
+
+.jplist-panel .text-filter-box {
+	box-shadow: 0 0 15px 1px rgba(236, 236, 236, 0.4);
+	border-radius: 15px;
 }

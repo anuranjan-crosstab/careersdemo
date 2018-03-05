@@ -77,7 +77,7 @@ $(document).ready(function(){
 	$('#scrollToJobMap2').click(function() {
 
 		$('html,body').animate({
-			scrollTop : $('.container-map').offset().top - 140
+			scrollTop : $('.container-map').offset().top
 		}, 'slow');
 
 	})
@@ -85,7 +85,7 @@ $(document).ready(function(){
 	$('#scrollToJobMap3').click(function() {
 
 		$('html,body').animate({
-			scrollTop : $('.container-map').offset().top - 140
+			scrollTop : $('.container-map').offset().top
 		}, 'slow');
 
 	})
@@ -237,7 +237,7 @@ $(function() {
 												{
 													scrollTop : $(
 														'.jplist')
-													.offset().top - 80
+													.offset().top - 40
 												},
 												'slow');
 												
@@ -379,7 +379,7 @@ $(function() {
 												{
 													scrollTop : $(
 														'.jplist')
-													.offset().top - 80
+													.offset().top - 40
 												},
 												'slow');
 
