@@ -1,9 +1,11 @@
-
+body {
+	overflow-y: hidden;
+}
 /*form styles*/
 #msform {
 	text-align: center;
 	position: relative;
-	margin-top: 30px;
+	margin-top: 55px;
 }
 
 #msform fieldset {
@@ -294,12 +296,13 @@
 }
 
 .down {
-	width: 100%;
+	width: 77%;
 	background: #ffffff9e;
 	position: fixed;
 	bottom: 0;
 	margin-right: 0;
 	margin-left: 0;
+	text-align: center;
 }
 
 .bottom-1 {
@@ -308,11 +311,11 @@
 	font-weight: bold;
 	color: white;
 	border: 0 none;
-	border-radius: 25px; cursor: pointer;
+	border-radius: 25px;
+	cursor: pointer;
 	padding: 10px 5px;
 	margin-top: 12px;
 	margin-bottom: 12px;
-	margin-right: 5%;
 }
 
 .bottom-2 {
