@@ -14,8 +14,6 @@
     <!-- MetisMenu CSS -->
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
-
-
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -323,7 +321,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">Passing
-                                    Month and Year</label> <input id="datepicker" class="passingmonthyear"
+                                    Month and Year</label> <input id="datepicker" class="passingmonthyear datepicker"
                                     placeholder="Fill in terms of MM-YYYY" style="width: 100%" />
                             </div>
 
@@ -399,12 +397,12 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">Start
-                                    Date</label> <input id="datepicker" placeholder="MM-YYYY"
+                                    Date</label> <input class="datepicker" placeholder="MM-YYYY"
                                     style="width: 100%" />
                             </div>
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">End
-                                    Date</label> <input id="datepicker" placeholder="MM-YYYY"
+                                    Date</label> <input class="datepicker" placeholder="MM-YYYY"
                                     style="width: 100%" />
                             </div>
                         </div>
@@ -598,24 +596,6 @@
             var myDropzone = new Dropzone("#dropzone",myDropzoneOptions2);
         </script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-            $(function() {
-                $("#datepicker").datepicker({
-                    changeMonth : true,
-                    changeYear : true,
-
-                });
-            });
-        </script>
-        <script type="text/javascript">
-            function append_form() {
-                var text1 = "<h3 class='fs-subtitle'>Fill your prior work experience details in reverse order.</h3><div class='row'><div class='col-md-4'><input type='text' name='' placeholder='Orgnisation' /></div><div class='col-md-8'><input type='text' name='' placeholder='Job title @ time of leaving organisation' /></div></div>";
-                var text2 = "<div class='row'><div class='col-md-4'><input id='datepicker'  placeholder='Start Date' style='width: 100%' /></div><div class='col-md-4'><input id='datepicker'  placeholder='End Date' style='width: 100%'' /></div></div>";
-                var text3 = "<div class='row'><div class='col-md-4'><select class='form-control' style='height: 40px; font-size: 13px;'><option>Country</option><option>option1</option><option>option2</option></select></div><div class='col-md-4'><select class='form-control'style='height: 40px; font-size: 13px;'><option>City</option><option>option1</option><option>option1</option></select></div></div><br>";
-                var text4 = "<div class='row'><div class='col-md-4'><input type='text' name='' placeholder='Last drawn CTC/Salary' /></div><div class='col-md-8'><input type='text' name='' placeholder='Currency' /></div></div>";
-                $('#try').append(text1, text2, text3, text4);
-            }
-        </script>
     <script>
         $(function() {
             $('.datepicker').datepicker(
@@ -772,8 +752,8 @@
                         'click',
                         '.add_more',
                         function() {
-                            var text1 = $('<hr><div class="row"><div class="col-md-6"><label for="" style="text-align: left; float: left">Institute/College</label><select class="form-control" id="institutename"name="institutename" style="height: 40px; font-size: 13px;"><optionvalue="">Specify Your Institute/College</option><option>Option1</option><option>Option2</option></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">PassingMonth and Year</label> <input id="passingyear" class="datepicker"placeholder="Fill in terms of MM-YYYY" style="width: 100%"name="passingyear" /></div></div>');
-                            var text2 = $('<div class="row"><div class="col-md-4"><label for="" style="text-align: left; float: left">Country</label><select class="form-control" name="countryedu" id="countryss"style="height: 40px; font-size: 13px;"></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">CourseType</label> <select class="form-control" name="course_type"id="course_type" style="height: 40px; font-size: 13px;"><optionvalue="">Specify Your Course Type</option><option>option1</option><option>option1</option></select></div></div>');
+                            var text1 = $('<hr><div class="row"><div class="col-md-6"><label for="" style="text-align: left; float: left">Institute/College</label><select class="form-control" id="institutename"name="institutename" style="height: 40px; font-size: 13px;"><optionvalue="">Specify Your Institute/College</option><option>Option1</option><option>Option2</option></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">Passing Month and Year</label> <input id="passingyear" class="datepicker"placeholder="Fill in terms of MM-YYYY" style="width: 100%"name="passingyear" /></div></div>');
+                            var text2 = $('<div class="row"><div class="col-md-4"><label for="" style="text-align: left; float: left">Country</label><select class="form-control" name="countryedu" id="countryss"style="height: 40px; font-size: 13px;"></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">Course Type</label> <select class="form-control" name="course_type"id="course_type" style="height: 40px; font-size: 13px;"><optionvalue="">Specify Your Course Type</option><option>option1</option><option>option1</option></select></div></div>');
                             var text3 = $('<div class="row"><div class="col-md-4"><label for="" style="text-align: left; float: left">Degree/Qualification</label><select class="form-control" name="degree" id="degree"style="height: 40px; font-size: 13px;"><option value="">SpecifyYour Degree/qualification</option><option>option1</option><option>option2</option></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">Branch/Specialization</label><select class="form-control" name="branch" id="branch"style="height: 40px; font-size: 13px;"><option value="">SpecifyYour Branch/Specialization</option><option>option1</option><option>option1</option></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">FillYour % Marks / CGPA / Grade</label> <input type="text" name="score"id="score" placeholder="Percentage Marks / CGPA / Grade" /></div></div>');
                             var text4 = $('<input type="button" name="add_more" value="Add More"class="add_more"style="width: 100px; border-radius: 25px;color: white;" /><input type="button" name="rem_more" value="Remove"class="rem_more"style="width: 100px; border-radius: 25px;color: white;" />');
                             $("#add_edu").append(text1, text2, text3, text4);
