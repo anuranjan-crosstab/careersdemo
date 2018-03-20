@@ -578,4 +578,51 @@ font-size: large;
 hr {
   margin-top: 0px;
   border-top: 1px solid #000;
+  margin-bottom: 5px;
+}
+
+#msform {
+  margin-top: 0;
+}
+
+#msform fieldset {
+  box-shadow: 0 12px 18px 1px rgba(0, 0, 0, 0.4);
+}
+
+#progressbar {
+  margin-bottom: 15px;
+}
+
+#progressbar .li2::before, #progressbar .li3::before, #progressbar .li4::before, #progressbar .li5::before {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    margin: 0 auto 5px auto;
+}
+
+#progressbar .li1, #progressbar .li2, #progressbar .li3, #progressbar .li4, #progressbar .li5, #progressbar .li6 {
+  color: #23b1ec;
+  text-shadow: 1px 1px #0645AC;
+}
+
+.bottom-1, .bottom-2 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.ui-datepicker-calendar {
+  display: none;
+}
+
+.add_work, .add_more, .rem_more {
+  background: #3e4a3c;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
 }

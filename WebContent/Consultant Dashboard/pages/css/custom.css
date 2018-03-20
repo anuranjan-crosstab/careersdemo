@@ -1,5 +1,5 @@
 body {
-	overflow-y: hidden;
+	/*overflow-y: hidden;*/
 }
 /*form styles*/
 #msform {
@@ -393,7 +393,7 @@ body {
 	#progressbar .li5, #progressbar .li6 {
 		font-weight: 500;
 		text-shadow: 1px 1px black;
-		font-size: medium;
+		font-size: small;
 	}
 }
 

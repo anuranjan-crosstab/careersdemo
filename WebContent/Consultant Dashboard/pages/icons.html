@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jubilant Careers</title>
-     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -101,6 +96,13 @@
         </nav>
 
         <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Job Position - <strong>Web Developer</strong></h1>
+                    <hr>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
         <div class="row" style="margin-right: 0; margin-left: 0;">
             <div class="col-md-12">
                 <form id="msform" action="" method="">
@@ -184,27 +186,22 @@
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">Country</label>
                                 <select class="form-control" id="country"
-                                    style="height: 40px; font-size: 13px;"><option>Specify
-                                        Your Country</option>
-                                    <option>Canada</option>
-                                    <option>India</option>
-                                    <option>USA</option></select>
+                                    style="height: 40px; font-size: 13px;"></select>
                             </div>
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">State</label>
                                 <select class="form-control" id="state"
-                                    style="height: 40px; font-size: 13px;"><option>Specify
-                                        Your State</option>
-                                    <option>option1</option>
-                                    <option>option2</option></select>
+                                    style="height: 40px; font-size: 13px;"></select>
                             </div>
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">City</label>
-                                <select class="form-control" id="City"
+<!--                                 <select class="form-control" id="City"
                                     style="height: 40px; font-size: 13px;"><option>Specify
                                         Your City</option>
                                     <option>option1</option>
-                                    <option>option2</option></select>
+                                    <option>option2</option></select> -->
+                                    <input type="text" name="city" id="city"
+                                    placeholder="Enter Candidate City" />
                             </div>
                         </div>
 
@@ -212,7 +209,7 @@
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">Postal/
                                     Zip Code</label> <input type="text" name="postalcode" id="postalcode"
-                                    placeholder="Postal/ Zip code of Your City" />
+                                    placeholder="Postal/ Zip code of Candidate's City" />
                             </div>
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">Country
@@ -227,7 +224,7 @@
                                 <span class="req">*&nbsp;&nbsp;</span><label for="mobilenumber"
                                     style="text-align: left; float: left" class="control-label">Mobile</label>
                                     <input type="tel" class="form-control" name="mobilenumber" id="mobilenumber"
-                                    placeholder="Enter Your Mobile Number" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" required/>
+                                    placeholder="Enter Candidate Mobile Number" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" required/>
                                     <div class="help-block with-errors"></div>
                             </div>
 
@@ -241,7 +238,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-md-6 col-lg-4">
+                            <div class="form-group col-md-6 col-lg-6">
                                 <span class="req">*&nbsp;&nbsp;</span><label for="workyear"
                                     style="text-align: left; float: left" class="control-label">Total Work
                                     Experience-Years</label>
@@ -258,7 +255,7 @@
                                     </select>
                                     <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group col-md-6 col-lg-4">
+                            <div class="form-group col-md-6 col-lg-6">
                                 <span class="req">*&nbsp;&nbsp;</span><label for="workmonth" style="text-align: left; float: left" class="control-label">Total Work Experience-Months</label>
                                     <select class="form-control" id="workexmonths" name="workexmonths" style="height: 40px; font-size: 13px;">
                                         <option value="">Your Total Work Experience in Months</option>
@@ -279,38 +276,30 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-6">
                                 <label for="" style="text-align: left; float: left" class="control-label">Master/Post Graduation</label> <select class="form-control" id="mgrad" style="height: 40px; font-size: 13px;">
-                                    <option value="">Specify    Your Masters/Post Graduation</option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
+                                    <option value="">Specify Candidate Masters/Post Graduation</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-6 col-lg-4">
+                            <div class="form-group col-md-6 col-lg-6">
                                 <span class="req">*&nbsp;&nbsp;</span><label for="graduation" style="text-align: left; float: left" class="control-label">Bachelors/Graduation</label>
                                 <select class="form-control" id="bgrad" name="bgrad" style="height: 40px; font-size: 13px;">
-                                    <option value="">Specify Your Bachelors/Graduation</option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
+                                    <option value="">Specify Candidate Bachelors/Graduation</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-group col-md-6 col-lg-4">
+                            <div class="form-group col-md-6 col-lg-6">
                                 <span class="req">*&nbsp;&nbsp;</span><label for="industry" style="text-align: left; float: left" class="control-label">Current Industry</label>
                                 <select class="form-control" id="industry" name="industry" style="height: 40px; font-size: 13px;">
-                                    <option value="">Specify Your Current Industry</option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
+                                    <option value="">Specify Candidate Current Industry</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-6 col-lg-4">
+                            <div class="form-group col-md-6 col-lg-6">
                                 <span class="req">*&nbsp;&nbsp;</span><label for=""
                                     style="text-align: left; float: left" class="control-label">Functional Area</label>
                                 <select class="form-control" id="function" name="function" style="height: 40px; font-size: 13px;">
                                     <option value="">Specify Your Functional Area</option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
                                 </select>
                             </div>
                         </div>
@@ -320,7 +309,7 @@
 
                     </fieldset>
 
-                    <fieldset class="outer">
+                    <fieldset class="outer" id="add_edu">
                         <h2 class="fs-title">Educational Details</h2>
                         <h3 class="fs-subtitle">Fill you educational details.</h3>
                         <div class="row">
@@ -343,11 +332,8 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <label for="" style="text-align: left; float: left">Country</label>
-                                <select class="form-control"
-                                    style="height: 40px; font-size: 13px;"><option>Specify
-                                        Your Country</option>
-                                    <option>option1</option>
-                                    <option>option2</option></select>
+                                <select class="form-control" id="countrys" 
+                                    style="height: 40px; font-size: 13px;"></select>
 
                             </div>
 
@@ -357,8 +343,10 @@
                                     Type</label> <select class="form-control"
                                     style="height: 40px; font-size: 13px;"><option>Specify
                                         Your Course Type</option>
-                                    <option>option1</option>
-                                    <option>option1</option></select>
+                                    <option>Part Time</option>
+                                    <option>Full Time</option>
+                                    <option>Correspondence</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row">
@@ -386,11 +374,11 @@
                                     placeholder="Percentage Marks / CGPA / Grade" />
                             </div>
                         </div>
-                        <input type="button" name="previous"
-                            class="previous action-button-previous" value="Previous" /> <input
-                            type="button" name="next" class="next action-button" value="Next" />
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                            <input type="button" name="add_more" value="Add More" class="add_more" style="width: 100px; border-radius: 25px; color: white;" />
                     </fieldset>
-                    <fieldset id="try" class="outer">
+                    <fieldset id="addwork" class="outer">
                         <h2 class="fs-title">Prior Work Experience Details</h2>
                         <h3 class="fs-subtitle">Fill your prior work experience
                             details in reverse order.</h3>
@@ -441,6 +429,7 @@
 
                         <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                         <input type="submit" name="submit" class="next action-button" value="Submit" />
+                        <input type="button" name="add_more" value="Add More" class="add_work" style="width: 100px; border-radius: 25px; color: white;" />
                     </fieldset>
 
                 </form>
@@ -465,6 +454,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="js/dropzone.js"></script>
+        <script src="js/countries.js"></script>
         <script src="js/jquery.floatinglabel.js"></script>
         <script src="js/kendo.all.min.js"></script>
             <script type="text/javascript">
@@ -626,6 +616,369 @@
                 $('#try').append(text1, text2, text3, text4);
             }
         </script>
+    <script>
+        $(function() {
+            $('.datepicker').datepicker(
+                    {
+                        changeMonth : true,
+                        changeYear : true,
+                        showButtonPanel : true,
+                        dateFormat : 'MM yy',
+                        onClose : function(dateText, inst) {
+                            $(this).datepicker(
+                                    'setDate',
+                                    new Date(inst.selectedYear,
+                                            inst.selectedMonth, 1));
+                        }
+                    });
+        });
+
+        populateCountries("country", "state", "countrycode")
+        populateCountries("countrys")
+    </script>
+            <script type="text/javascript">
+        $(document).ready(function() {
+
+            $.ajax({
+                type : "GET",
+
+                url : "http://localhost:8008/xmlparser/rest/test/fulljson",
+
+                success : function(jsonData) {
+                    console.log(jsonData);
+                    $.each(JSON.parse(jsonData), function(i, item) {
+                        $('#title').val(item.name_type);
+                        $('#fname').val(item.first_name);
+                        $('#lname').val(item.last_name);
+                        $('#addr1').val(item.addr1);
+                        $('#addr2').val(item.addr2);
+                        $('#addr3').val(item.addr3);
+                        $('#addr4').val(item.addr4);
+                        $('#country').val(item.country);
+                        $('#state').val(item.state);
+                        $('#city').val(item.city);
+                        $('#postalcode').val(item.postal);
+                        $('#countrycode').val(item.country_code);
+                        $('#mobilenumber').val(item.phone);
+                        $('#emailid').val(item.email);
+                        $('#workexyears').val(item.exp_year);
+                        $('#workexmonths').val(item.exp_month);
+                        $('#mgrad').val(item.post_grad);
+                        $('#bgrad').val(item.grad);
+                        $('#industry').val(item.industry);
+                        $('#function').val(item.functional_area);
+                        $('#passingyear').val(item.passing_year);
+                        $('#current').val(item.company);
+                        $('#jobtitle').val(item.jobtitle);
+                        $('#start_date').val(item.start_date);
+                        $('#end_date').val(item.end_date);
+                        $('#ctc').val(item.salary);
+                        $('#curr').val(item.currency);
+                        $('#institutename').val(item.institution);
+                        $('#course_type').val(item.course_type);
+                        $('#degree').val(item.degree);
+                        $('#branch').val(item.branch);
+                        $('#score').val(item.cgpa);
+                        $('#countrys').val(item.country_edu);
+                    });
+
+                }
+            });
+        });
+        $("#draft")
+                .click(
+                        function() {
+                            var title = $('#title').val();
+                            var fname = $('#fname').val();
+                            var lname = $('#lname').val();
+                            var addr1 = $('#addr1').val();
+                            var addr2 = $('#addr2').val();
+                            var addr3 = $('#addr3').val();
+                            var addr4 = $('#addr4').val();
+                            var country = $('#country').val();
+                            var state = $('#state').val();
+                            var city = $('#city').val();
+                            var postal = $('#postalcode').val();
+                            var countrycode = $('#countrycode').val();
+                            var phone = $('#mobilenumber').val();
+                            var email = $('#emailid').val();
+                            var expyear = $('#workexyears').val();
+                            var expmonth = $('#workexmonths').val();
+                            var pgrad = $('#mgrad').val();
+                            var grad = $('#bgrad').val();
+                            var industry = $('#industry').val();
+                            var funct = $('#function').val();
+                            var passingyear = $('#passingyear').val();
+                            var employer = $('#current').val();
+                            var endingttile = $('#jobtitle').val();
+                            var startdt = $('#start_date').val();
+                            var enddt = $('#end_date').val();
+                            var currsal = $('#ctc').val();
+                            var curr = $('#curr').val();
+                            var schoolcode = $('#institutename').val();
+                            var typeofstudy = $('#course_type').val();
+                            var itemid = $('#degree').val();
+                            var majorcode = $('#branch').val();
+                            var jpm_decimal = $('#score').val();
+                            var countryedu = $('#countrys').val();
+                            $
+                                    .ajax({
+                                        type : "POST",
+                                        url : "http://localhost:8008/xmlparser/rest/test/jubilant/emp_draft",
+                                        data : {
+                                            title : title,
+                                            fname : fname,
+                                            lname : lname,
+                                            addr1 : addr1,
+                                            addr2 : addr2,
+                                            addr3 : addr3,
+                                            addr4 : addr4,
+                                            country : country,
+                                            state : state,
+                                            city : city,
+                                            postalcode : postal,
+                                            countrycode : countrycode,
+                                            mobilenumber : phone,
+                                            emailid : email,
+                                            workexyears : expyear,
+                                            workexmonths : expmonth,
+                                            mgrad : pgrad,
+                                            bgrad : grad,
+                                            industry : industry,
+                                            funct : funct,
+                                            current : employer,
+                                            jobtitle : endingttile,
+                                            start_date : startdt,
+                                            end_date : enddt,
+                                            ctc : currsal,
+                                            curr : curr,
+                                            countryedu : countryedu,
+                                            institutename : schoolcode,
+                                            passingyear : passingyear,
+                                            course_type : typeofstudy,
+                                            degree : itemid,
+                                            branch : majorcode,
+                                            score : jpm_decimal,
+                                        },
+                                        success : function(data) {
+                                            console.log(data);
+                                        }
+                                    });
+
+                        })
+        var i = 1;
+        $('#add_edu')
+                .on(
+                        'click',
+                        '.add_more',
+                        function() {
+                            var text1 = $('<hr><div class="row"><div class="col-md-6"><label for="" style="text-align: left; float: left">Institute/College</label><select class="form-control" id="institutename"name="institutename" style="height: 40px; font-size: 13px;"><optionvalue="">Specify Your Institute/College</option><option>Option1</option><option>Option2</option></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">PassingMonth and Year</label> <input id="passingyear" class="datepicker"placeholder="Fill in terms of MM-YYYY" style="width: 100%"name="passingyear" /></div></div>');
+                            var text2 = $('<div class="row"><div class="col-md-4"><label for="" style="text-align: left; float: left">Country</label><select class="form-control" name="countryedu" id="countryss"style="height: 40px; font-size: 13px;"></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">CourseType</label> <select class="form-control" name="course_type"id="course_type" style="height: 40px; font-size: 13px;"><optionvalue="">Specify Your Course Type</option><option>option1</option><option>option1</option></select></div></div>');
+                            var text3 = $('<div class="row"><div class="col-md-4"><label for="" style="text-align: left; float: left">Degree/Qualification</label><select class="form-control" name="degree" id="degree"style="height: 40px; font-size: 13px;"><option value="">SpecifyYour Degree/qualification</option><option>option1</option><option>option2</option></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">Branch/Specialization</label><select class="form-control" name="branch" id="branch"style="height: 40px; font-size: 13px;"><option value="">SpecifyYour Branch/Specialization</option><option>option1</option><option>option1</option></select></div><div class="col-md-4"><label for="" style="text-align: left; float: left">FillYour % Marks / CGPA / Grade</label> <input type="text" name="score"id="score" placeholder="Percentage Marks / CGPA / Grade" /></div></div>');
+                            var text4 = $('<input type="button" name="add_more" value="Add More"class="add_more"style="width: 100px; border-radius: 25px;color: white;" /><input type="button" name="rem_more" value="Remove"class="rem_more"style="width: 100px; border-radius: 25px;color: white;" />');
+                            $("#add_edu").append(text1, text2, text3, text4);
+
+                            i = parseInt(i) + parseInt(1);
+                            var link = $('#countryss').attr("id",
+                                    "countryss" + i);
+                            console.log(link);
+                            populateCountries("countryss" + i)
+                            $('#add_edu').on('click', '.rem_more', function() {
+
+                                text1.remove();
+                                text2.remove();
+                                text3.remove();
+                                text4.remove();
+                            })
+                        })
+
+        $('#addwork')
+                .on(
+                        'click',
+                        '.add_work',
+                        function() {
+                            var text11 = '<hr><div class="row"><div class="col-md-6"><span class="req">*&nbsp;&nbsp;</span><label for="current"style="text-align: left; float: left">Last/CurrentOrganization</label> <input type="text" id="current" name="current"placeholder="Specify Your Last/Current Orgnization" required="" /></div><div class="col-md-6"><label for="" style="text-align: left; float: left">Current/Last Job title @ time of leaving the organization</label> <input type="text"name="jobtitle" id="jobtitle"placeholder="Specify Your Job title @ time of leaving organization" /></div></div>';
+                            var text12 = '<div class="row"><div class="col-md-4"><label for="" style="text-align: left; float: left">StartDate</label> <input id="start_date" placeholder="MM-YYYY"name="start_date" class="datepicker" style="width: 100%" /></div><div class="col-md-4"><label for="" style="text-align: left; float: left">EndDate</label> <input id="end_date" placeholder="MM-YYYY" name="end_date"class="datepicker" style="width: 100%" /></div></div>';
+                            var text13 = '<div class="row"><div class="col-md-4"><label for="" style="text-align: left; float: left">Lastdrawn CTC/Salary</label> <input type="text" name="ctc" id="ctc"placeholder="Last drawn CTC/Salary which you get in previous organization" /></div><div class="col-md-4"><label for="" style="text-align: left; float: left">Currency</label><input type="text" name="curr" id="curr"placeholder="Specify the currency of your salary" /></div></div>';
+                            var text14 = '<input type="button" name="add_more" value="Add More"class="add_work"style="width: 100px; border-radius: 25px;color: white;" />'
+                            $("#addwork")
+                                    .append(text11, text12, text13, text14);
+                        });
+        $('#add_edu').on(
+                'click',
+                '.datepicker',
+                function() {
+                    $(this).datepicker(
+                            {
+                                changeMonth : true,
+                                changeYear : true,
+                                showButtonPanel : true,
+                                dateFormat : 'MM yy',
+                                onClose : function(dateText, inst) {
+                                    $(this).datepicker(
+                                            'setDate',
+                                            new Date(inst.selectedYear,
+                                                    inst.selectedMonth, 1));
+                                }
+                            });
+                })
+        $('#addwork').on(
+                'click',
+                '.datepicker',
+                function() {
+                    $(this).datepicker(
+                            {
+                                changeMonth : true,
+                                changeYear : true,
+                                showButtonPanel : true,
+                                dateFormat : 'MM yy',
+                                onClose : function(dateText, inst) {
+                                    $(this).datepicker(
+                                            'setDate',
+                                            new Date(inst.selectedYear,
+                                                    inst.selectedMonth, 1));
+                                }
+                            });
+                })
+        var industry = [ 'Industry', 'Any', 'Accounting/Finance',
+                'Advertising/PR/MR/Event', 'Agriculture/Dairy', 'Animation',
+                'Architecture/Interior Design', 'Auto/Auto Ancillary',
+                'Aviation/Aerospace Firm',
+                'Banking/Financial Services/Broking', 'BPO/ITES',
+                'Brewery/Distillery',
+                'Chemical/PetroChemical/ Plastic/ Rubber',
+                'Construction/Engineering/Cement/Metals', 'Consumer Durables',
+                'Courier/Transportation/Freight', 'Ceramics/Sanitary ware',
+                'Defence/Government', 'Education/Teaching/Training',
+                'Electrical/ Switchgears', 'Export/Import',
+                'Facility Management', 'Fertilizers/Pesticides',
+                'FMCG/Food/Beverage', 'Food Processing', 'Fresher/Trainee',
+                'Gems & Jewellery', 'Glass',
+                'Heat Ventilation Air-Conditioning',
+                'Hotels/Resturants/Airlines/Travel',
+                'Industrial Products/Heavy Machinery', 'Insurance',
+                'IT-Software/ Software Services', 'IT-Hardware & Networking',
+                'Telecom/ ISP', 'KPO/Research/Analytics', 'Legal',
+                'Media/Dotcom/Entertainment', 'Internet/E-Commerce',
+                'Medical/Healthcare/Hospital', 'Mining', 'NGO/Social Services',
+                'Office Equipment/ Automation',
+                'Oil and Gas/Power/Infrastructure/Energy', 'Paper',
+                'Pharma/Biotech/Clinical Research', 'Printing/Packaging',
+                'Publishing', 'Real Estate/Property', 'Recruitment', 'Retail',
+                'Security/Law Enforcement', 'Semiconductors/ Electronics',
+                'Shiping/Marine', 'Steel',
+                'Strategy/Management Consulting Firms',
+                'Textiles/Garments/Acessories', 'Tyres',
+                'Water Treatment/Waste Management', 'Wellness/Fitness/Sports',
+                'Other' ];
+        var functional = [ 'Chairman Office', 'CEO Office', 'Huamn Resources',
+                'Administration', 'Security', 'Finance & Accounts',
+                'Shares & Secretarial', 'Legal', 'Sustainability',
+                'Manufacturing', 'Projects', 'Business Managment',
+                'Slaes & Marketing', 'Corporate Office',
+                'Corporate Communication', 'Information Technology',
+                'Research & Development', 'Medical & Scientific Affairs',
+                'Pharmacovigilance', 'Technical Services', 'Quality',
+                'Regulatory Affairs', 'Supply Chain', 'Business Excellence',
+                'Ombudsman Office' ];
+        var graduation = [ 'Bachelor of Applied Sciences (BASC)',
+                'Bachelor of Arts(BAT)', 'Bachelor of Business Admin (BBAD)',
+                'Bachelor of Business Management (BBM)',
+                'Bachelor of Business Studies (BBS)',
+                'Bachelor of Computer Application (BCA)',
+                'Bachelor of Chemistry(BCHEM)', 'Bachelor of Commerce (BCOM)',
+                'Bachelor of Education (BED)', 'Bachelor of Engineering (BEG)',
+                'Bachelor of Fine Arts (BFAT)',
+                'Bachelor of Hotel Management (BHMCT)',
+                'Bachelor in Library Sciences (BLIB) ',
+                'Bachelor of Nursing Degree (BND)',
+                'Bachelor of Pharmacy (BPHAR)', 'BS Animal Husbandry (BSAH)',
+                'Bachelor of Science (BSC)',
+                'Bachelor of Science(Computer Science) - BSC(CS)',
+                'Bachelor of Science Engineering (BSCE)',
+                'Bachelor of Science-Law (BSCL)',
+                'Bachelor of Fisheries Science (FISHERIES)',
+                'Bachelor of Technology (BTECH)', 'Bachelor of Theology (BTY)',
+                'Bachelor of Veterinary Science (BVETY)', 'Degree (DEG)',
+
+                'Graduate from National Institute of Information (GNIIT)',
+                'Intermediate Degree (INT)', 'Law (LLB)',
+                'Bachelor of Medicine (MBBS)', 'Others (OTHER_GRADUATE)',
+                'Qualified Degree (QUA)' ];
+        var post_graduation = [
+                'Doctor of Business Admin (DBAD)',
+                'Doctorate (DOC)',
+                'Master of Laws (L.L.M.)',
+                'Masters in Library Science (M.LIB.SC.)',
+                'Masters od Hospital Administration (M.H.A.)',
+                'Masters od Arts (MAT)',
+                'Master of Business Admin(MBA)',
+                'Masters in Business Law(MBL)',
+                'Masters in Computer Application(MCA)',
+                'Master of Civil Engineering(MCEG)',
+                'Masters in Commerce(MCOM)',
+                'Doctor of Medicine(MD)',
+                'Masters`s Diploma in Business Administration (MDBA)',
+                'Master of Divinity(MDIY)',
+                'Master of Education(MEDN)',
+                'Master of Electrical Engineering(MEEG)',
+                'Master of Engineering(MEG)',
+                'Master of Fine Arts(MFAT)',
+                'Master of Forest Management(MFM)',
+                'Masters in International Business(MIB)',
+                'Masters in Industrial Engineering(MIE)',
+                'Masters in Labour Law I.R.(MLLIR)',
+                'Master of Machenical Engineering(MMEG)',
+                'Masters in Marketing Management(MMKM)',
+                'Masters in Material Management(MMM)',
+                'Masters in Management Studies(MMS)',
+                'Masters in Professional Accounting(MPA)',
+                'Masters in pharmacy(MPHAR)',
+                'Masters in Philosphy(MPHIL)',
+                'Masters Programme in International Business(MPIB)',
+                'Masters in Personnel Management(MPM)',
+                'Master of personal Management and industrial Relation(MPMIR)',
+                'Master of Science(MS)',
+                'Master of Science(MSC)',
+                'Master of Science - Law(MSCL)',
+                'Masters in Social Work(MSW)',
+                'Masters in Technology(MTECH)',
+                'Master of Theology(MTY)',
+                'Master of Veterinary Science & Animal Husbandry(MVSC&AH)',
+                'Post Graduate Diploma(PGD)',
+                'Post Graduate Diploma in Business Administration(PGDBA)',
+                'Post Graduate Diploma in Business Management(PGDBM)',
+                'Post Graduate Diploma in Computer Application(PGDCA)',
+                'Post Graduate Diploma in Import Export Management(PGDIEM)',
+                'Post Graduate Diploma in Information Systems(PGDIS)',
+                'Post Graduate diploma in Management(PGDM)',
+                'Post Graduate Diploma in Medical Radio Isotopes Techniques(PGDMRIT)',
+                'Post Graduate Diploma in Patents Law(PGDPL)',
+                'Post Graduate Diploma in Regulatory Affairs(PGDRA)',
+                'Post Graduate Diploma in Supply Chain Management(PGDSCM)',
+                'Post Graduate in Logistic and Supply Chain Management(PGLSCM)',
+                'Post Graduate Degree(PGN)',
+                'Post Graduate Programme in Agri Business Management(PGPABM)',
+                'Post Graduate Diploma in Total Quality Management(PGTQM)',
+                'Doctor of Philosphy(PHD)', 'Doctor of Engineering(PHEG)',
+                'Doctor of Science(PHSC)' ];
+        select1 = document.getElementById('function');
+        select2 = document.getElementById('industry');
+        select3 = document.getElementById('bgrad');
+        select4 = document.getElementById('mgrad');
+        for(post_grad in post_graduation){
+            select4.add(new Option(post_graduation[post_grad]));
+        }
+        for (industrial_area in industry) {
+            select2.add(new Option(industry[industrial_area]));
+        };
+        for (functional_area in functional) {
+            select1.add(new Option(functional[functional_area]));
+        };
+        for (grad in graduation) {
+            select3.add(new Option(graduation[grad]));
+        };
+    </script>
         <script src="js/bootstrap-toggle.js"></script>
         <script type="text/javascript" src="js/validate.js"></script>
 
