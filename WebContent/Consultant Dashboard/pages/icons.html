@@ -961,6 +961,14 @@
     </script>
         <script src="js/bootstrap-toggle.js"></script>
         <script type="text/javascript" src="js/validate.js"></script>
+        <!-- Hide Datepicker on scroll start -->
+        <script type="text/javascript">
+            $('#add_edu').scroll(function(){
+                $("input").datepicker("hide");
+                $("input").blur();
+            });
+        </script>
+        <!-- Hide Datepicker on scroll end -->
 
     </body>
     </html>
