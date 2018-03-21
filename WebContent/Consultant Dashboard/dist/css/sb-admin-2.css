@@ -18,6 +18,7 @@
 body {
   background-color: #eee;
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 #wrapper {
   width: 100%;
@@ -453,7 +454,7 @@ table.dataTable thead .sorting:after {
 
 .navbar.navbar-default.navbar-static-top {
     width: 100%;
-    z-index: 1;
+    z-index: 6;
     position: fixed;
     border-color: transparent;
     background-color: #349886;
@@ -577,8 +578,8 @@ font-size: large;
 
 hr {
   margin-top: 0px;
-  border-top: 1px solid #000;
-  margin-bottom: 5px;
+  border-top: 1px solid #d1d1d1;
+  margin-bottom: 7px;
 }
 
 #msform {
@@ -630,3 +631,10 @@ hr {
 .page-header strong {
   color: #0645AC;
 }
+
+.rem_more {
+  background-color: #d14444;
+}
+
+#success_message{ display: none;}
+
