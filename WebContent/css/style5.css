@@ -1463,9 +1463,11 @@ div#OR {
 }
 
 .slide-caption .caption-content p {
-	font-size: 250%;
-	text-shadow: 1px 1px 6px #000000;
-	font-family: 'Oswald';
+font-size: 145%;
+text-shadow: 1px 1px 6px #000000;
+font-family: 'Oswald';
+padding: 30px 120px;
+font-weight: 300;
 }
 
 .slide-caption .caption-content a {
