@@ -685,7 +685,7 @@ body {
 	border-color: #FFF;
 }
 .rvs-nav-item-credits {
-	color: #767676;
+	color: #ffffff;
 }
 .rvs-item-text {
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -927,3 +927,9 @@ background: linear-gradient(#8CCE32, #91C763, #94BA6E, #80bb2d);
 .rvs-red-highlight.rvs-container a.rvs-nav-item.rvs-active:first-child:hover {
 	border-color: #F12B24;
 }
+
+/*Custom Start*/
+.rvs-nav-container span.rvs-nav-item-thumb {
+	background-color: transparent;
+}
+/*Custom End*/
