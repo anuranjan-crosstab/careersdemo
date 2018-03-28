@@ -403,9 +403,20 @@ now override the 3.3 new styles for modern browsers & apply opacity
 @media only screen and (max-width : 767px) {
 	.banner {
 		padding: .5rem 0 .5rem 0;
+		height: 9vh;
 	}
 	.banner h2 {
 		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (max-width : 991px) and (min-width: 768px) {
+	.banner {
+		padding: .5rem 0 .5rem 0;
+		height: 10vh;
+	}
+	.banner h2 {
+		font-size: 3.5rem;
 	}
 }
 
@@ -1266,6 +1277,15 @@ div#OR {
 	font-size: 1.5em;
 }
 
+@media screen and (max-width: 767px) {
+	#section2 h2 {
+		font-size: 1.6em;
+	}
+	#section2 p {
+		font-size: 1.2em;
+	}
+}
+
 .container-map {
 	width: 80%;
 	height: auto;
@@ -1463,16 +1483,30 @@ div#OR {
 }
 
 .slide-caption .caption-content p {
-font-size: 145%;
-text-shadow: 1px 1px 6px #000000;
-font-family: 'Oswald';
-padding: 30px 120px;
-font-weight: 300;
+	font-size: 145%;
+	text-shadow: 1px 1px 6px #000000;
+	font-family: 'Oswald';
+	padding: 30px 120px;
+	font-weight: 300;
 }
 
 .slide-caption .caption-content a {
 	font-size: 140%;
 	font-family: 'Oswald';
+}
+
+@media screen and (max-width: 767px) {
+	.slide-caption .caption-content h2 {
+	    font-size: 200%;
+	    padding: 0 10px;
+	}
+	.slide-caption .caption-content p {
+		font-size: 100%;
+		padding: 0 20px;
+	}
+	blockquote {
+		padding: 0; 
+	}
 }
 
 /* Form message */
@@ -1488,6 +1522,18 @@ font-weight: 300;
 
 #section1, #section2, #section2description, #section3, #section4, #section-video {
 	height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+	#section1, #section2, #section2description, #section3, #section4, #section-video {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	#section1, #section2, #section2description, #section3, #section4, #section-video {
+		height: auto;
+	}
 }
 
 #section3 #val {
@@ -1615,6 +1661,12 @@ transform:rotateY(180deg);
     font-size: 20px;
 }
 
+@media only screen and (max-width : 767px) {
+	.col-is-1, .col-is-2, .col-is-3, .col-is-4 {
+		height: 70vh;
+	}
+}
+
 .imagechange-3d {
 	height: 83vh;
     padding-top: 35%;
@@ -1629,6 +1681,12 @@ transform:rotateY(180deg);
 .imgchange-2 {
     font-size: 18px;
     margin-top: 15%;
+}
+
+@media only screen and (max-width : 767px) {
+	.imagechange-3d {
+	    padding-top: 5%;
+	}
 }
 
 .demo-tbl {
@@ -1713,4 +1771,10 @@ transform:rotateY(180deg);
     text-align: center;
     float: none;
   
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-default .navbar-collapse {
+		background-color: #0D3B9C;
+	}
 }

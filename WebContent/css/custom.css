@@ -441,3 +441,20 @@ body {
 /*#dropzonePreview span {
     line-height: 120px;
 }*/
+
+#progressbar #li2:before {
+	content: '\f0cb';
+}
+#progressbar #li3:before {
+	content: '\f036';
+}
+#progressbar #li4:before {
+	content: '\f271';
+}
+#progressbar #li5:before {
+	content: '\f084';
+}
+
+select{
+  font-family: FontAwesome, sans-serif;
+}
