@@ -420,6 +420,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	}
 }
 
+@media only screen and (max-width : 1199px) and (min-width: 992px) {
+	.banner h2 {
+		margin-top: 20px;
+	}
+}
+
 .values {
 	height: 300px;
 	padding-right: 0;
@@ -1536,6 +1542,12 @@ div#OR {
 	}
 }
 
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+	#section1, #section2, #section2description, #section3, #section4, #section-video {
+		height: auto;
+	}
+}
+
 #section3 #val {
 	height: 100%;
 }
@@ -1663,7 +1675,14 @@ transform:rotateY(180deg);
 
 @media only screen and (max-width : 767px) {
 	.col-is-1, .col-is-2, .col-is-3, .col-is-4 {
-		height: 70vh;
+		height: 60vh;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.imgchange-1 {
+		max-width: 70%;
+		margin-left: 15%;
 	}
 }
 

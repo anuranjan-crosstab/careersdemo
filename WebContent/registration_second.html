@@ -40,11 +40,11 @@
 					</ul>
 					<!-- fieldsets -->
 
-					<fieldset class="outer">
+					<fieldset class="outer-2">
 						<h2 class="fs-title">Preference</h2>
 						<h3 class="fs-subtitle">Please select your preferences.</h3>
 						<div class="row">
-							<div class="form-group col-md-6 col-lg-4 col-lg-offset-1">
+							<div class="form-group col-md-6 col-lg-offset-3">
 								<span class="req">*&nbsp;&nbsp;</span><label for="workyear"
 									style="text-align: left; float: left" class="control-label">Regular/Temporary</label>
 									<select class="form-control" id="workexyears" name="workexyears" style="height: 40px; font-size: 13px;">
@@ -55,7 +55,7 @@
 									</select>
 									<div class="help-block with-errors"></div>
 							</div>
-							<div class="form-group col-md-6 col-lg-4 col-lg-offset-2">
+							<div class="form-group col-md-6 col-lg-offset-3">
 								<span class="req">*&nbsp;&nbsp;</span><label for="workmonth" style="text-align: left; float: left" class="control-label">Full/Part-Time</label>
 									<select class="form-control" id="workexmonths" name="workexmonths" style="height: 40px; font-size: 13px;">
 										<option value="">Select</option>
@@ -68,7 +68,7 @@
 						<input type="button" name="next" class="next action-button"
 							value="Next" />
 					</fieldset>
-					<fieldset class="outer">
+					<fieldset class="outer-2">
 						<h2 class="fs-title">Pre-Screening Questionnaire</h2>
 						<h3 class="fs-subtitle">Answer the following questions.</h3>
 						<div class=row>
@@ -99,19 +99,19 @@
 
 					</fieldset>
 
-					<fieldset class="outer">
+					<fieldset class="outer-2">
 						<h2 class="fs-title">Other Information</h2>
 						<h3 class="fs-subtitle">Please provide added information.</h3>
 						<div class="row">
 							<div class='col-md-4'>
 								<span class="req">*&nbsp;&nbsp;</span><label for="" style="text-align: left; float: left">How did you hear about the job?</label>
-								<select class="form-control" id="hear">
+								<select class="form-control" id="hear" style="height: 40px; font-size: 13px;">
 									<option value="">Career Portal</option>
 								</select>
 							</div>
 							<div class='col-md-4'>
 								<span class="req">*&nbsp;&nbsp;</span><label for="" style="text-align: left; float: left">Sub Source</label>
-								<select class="form-control" id="hear">
+								<select class="form-control" id="hear" style="height: 40px; font-size: 13px;">
 									<option value="">Career Portal</option>
 									<option>Friend</option>
 									<option>Internet</option>
@@ -127,37 +127,37 @@
 						</div>
 
 						<div class="row">
-							<div class="col-md-4 col-lg-offset-1">
+							<div class="col-md-4">
 								<label for="employee" style="text-align: left; float: left;">Are you a former employee?</label>
 								<br>
-							    <label class="radio">
+							    <label class="radio choice">
 							      <input type="radio" name="optradio" style="height: auto; width: auto;">Yes
 							    </label>
-							    <label class="radio">
+							    <label class="radio choice">
 							      <input type="radio" name="optradio" style="height: auto; width: auto;">No
 							    </label>
 							</div>
-							<div class="col-md-4 col-lg-offset-2">
+							<div class="col-md-4">
 								<label for="relocate" style="text-align: left; float: left;">Are you willing to relocate?</label>
 								<br>
-							    <label class="radio">
-							      <input type="radio" name="optradio" style="height: auto; width: auto;">Yes
+							    <label class="radio choice">
+							      <input type="radio" name="optradio2" style="height: auto; width: auto;">Yes
 							    </label>
-							    <label class="radio">
-							      <input type="radio" name="optradio" style="height: auto; width: auto;">No
+							    <label class="radio choice">
+							      <input type="radio" name="optradio2" style="height: auto; width: auto;">No
 							    </label>
 							</div>
-							<div class="col-md-4 col-lg-offset-1">
+							<div class="col-md-4">
 								<label for="relocate" style="text-align: left; float: left;">Have you ever been interviewed by Jubilant?</label>
 								<br>
-							    <label class="radio">
-							      <input type="radio" name="optradio" style="height: auto; width: auto;">Yes
+							    <label class="radio choice">
+							      <input type="radio" name="optradio3" style="height: auto; width: auto;">Yes
 							    </label>
-							    <label class="radio">
-							      <input type="radio" name="optradio" style="height: auto; width: auto;">No
+							    <label class="radio choice">
+							      <input type="radio" name="optradio3" style="height: auto; width: auto;">No
 							    </label>
 							</div>
-							<div class="col-md-4 col-lg-offset-2">
+							<div class="col-md-4">
 								<label for="" style="text-align: left; float: left">Notice Period</label>
 									<select class="form-control" style="height: 40px; font-size: 13px;">
 										<option>Specify your Notice Period</option>
@@ -171,9 +171,9 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12 col-md-10 col-lg-offset-1">
-								<label for="" style="text-align: left; float: left">Describe your professional back ground in one line</label>
-								<input type="text" name="" placeholder="Write here" />
+							<div class="col-md-12">
+								<label for="" style="text-align: left; float: left">Describe your professional background in one line</label>
+								<textarea placeholder="Write here" class="form-control" id="comment" rows="3"></textarea>
 							</div>
 
 						</div>
@@ -181,14 +181,14 @@
 							class="previous action-button-previous" value="Previous" /> <input
 							type="button" name="next" class="next action-button" value="Next" />
 					</fieldset>
-					<fieldset id="try" class="outer">
+					<fieldset class="outer-2">
 						<h2 class="fs-title">Privacy Agreement</h2>
 						<h3 class="fs-subtitle">Confirm the acceptance agreement.</h3>
 						<div class="row">
 							<input type="hidden" name="">
 						</div>
 						<div class="row">
-							<div class="col-md-4 col-lg-offset-1">
+							<div class="col-md-4">
 								<label for="" style="text-align: left; float: left">Gender</label>
 									<select class="form-control" style="height: 40px; font-size: 13px;">
 										<option value="">Select</option>
@@ -197,16 +197,16 @@
 										<option>Transgender</option>
 									</select>
 							</div>
-							<div class="col-md-4 col-lg-offset-2">
-								<label for="" style="text-align: left; float: left">Date of Birth</label>
-								<input id="datepicker" placeholder="MM-YYYY" style="width: 100%" />
+							<div class="col-md-4">
+								<span class="req">*&nbsp;&nbsp;</span><label for="" style="text-align: left; float: left">Date of Birth</label>
+								<input id="datepicker" class="form-control" placeholder="MM-YYYY" />
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="col-md-4">
 								<label for="" style="text-align: left; float: left">Ethnicity</label>
-									<select class="form-control">
+									<select class="form-control" style="height: 40px; font-size: 13px;">
 										<option value="">Select</option>
 										<option>Asian</option>
 										<option>American</option>
@@ -215,7 +215,7 @@
 							</div>
 							<div class="col-md-4">
 								<label for="" style="text-align: left; float: left">Veteran Status</label>
-									<select class="form-control">
+									<select class="form-control" style="height: 40px; font-size: 13px;">
 										<option value="">Select</option>
 										<option>1</option>
 										<option>2</option>
@@ -224,7 +224,7 @@
 							</div>
 							<div class="col-md-4">
 								<label for="" style="text-align: left; float: left">Disability Status</label>
-									<select class="form-control">
+									<select class="form-control" style="height: 40px; font-size: 13px;">
 										<option value="">Select</option>
 										<option>1</option>
 										<option>2</option>
@@ -242,7 +242,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="row down" style="">
+<!-- 		<div class="row down" style="">
 			<div class="col-md-12" style="" align="center">
 				<button class="bottom-1" style="">
 					<i class="fa fa-save"></i>&nbsp;&nbsp;Save As Draft
@@ -251,7 +251,7 @@
 					<i class="fa fa-sign-out"></i>&nbsp;&nbsp;Quit
 				</button>
 			</div>
-		</div>
+		</div> -->
 
 		<script src="js/jquery.min.js"></script>
 

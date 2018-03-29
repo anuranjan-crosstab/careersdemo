@@ -1336,7 +1336,13 @@ transform:rotateY(180deg);
 	padding-left: 2%;
 	border-radius: 0 50px 0 0;
 	margin-bottom: 0;
-	margin-left: 90px;
+}
+
+@media only screen and (max-width: 767px) {
+	#section-apply h1 {
+		width: 55%;
+		font-size: 1.6em;
+	}
 }
 
 #section-apply thead, tfoot {
@@ -1384,4 +1390,5 @@ border-top: 1px dotted #000;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: #ffffff;
+	overflow-y: scroll;
 }

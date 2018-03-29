@@ -537,6 +537,11 @@ font-size: large;
   font-size: x-large;
   font-weight: 200;
   color: #ffffff;
+  cursor: default;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -638,3 +643,10 @@ hr {
 
 #success_message{ display: none;}
 
+select{
+  font-family: FontAwesome, sans-serif;
+}
+
+.radio {
+    margin-left: 25px;
+}

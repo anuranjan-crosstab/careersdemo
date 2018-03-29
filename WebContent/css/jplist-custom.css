@@ -305,7 +305,7 @@
 }
 
 .jplist-panel input[type="text"] {
-	width: 155px;
+	width: 80%;
 	font-size: 14px;
 	padding: 0 5px;
 	border: 1px solid #cccccc;
