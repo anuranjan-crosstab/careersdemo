@@ -400,23 +400,24 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	margin-top: 10px;
 }
 
-@media only screen and (max-width : 767px) {
-	.banner {
-		padding: .5rem 0 .5rem 0;
-		height: 9vh;
-	}
-	.banner h2 {
-		font-size: 2.5rem;
-	}
-}
-
 @media only screen and (max-width : 991px) and (min-width: 768px) {
 	.banner {
 		padding: .5rem 0 .5rem 0;
-		height: 10vh;
+		height: 5em;
 	}
 	.banner h2 {
-		font-size: 3.5rem;
+		font-size: 3.75rem;
+		margin-top: 0.4em;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.banner {
+		padding: .5rem 0 .5rem 0;
+		height: 4em;
+	}
+	.banner h2 {
+		font-size: 2.5rem;
 	}
 }
 
@@ -1457,14 +1458,16 @@ div#OR {
 
 @media screen and (min-width: 768px) and (max-width: 991px){
 	#myBtn {
-		width: 7%;
+		width: 6%;
+		height: 9%;
 	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
 	#myBtn {
-		width: 10%;
-		font-size: 50px;
+		width: 6%;
+		font-size: 25px;
+		height: 8%;
 	}
 }
 
@@ -1705,6 +1708,10 @@ transform:rotateY(180deg);
 @media only screen and (max-width : 767px) {
 	.imagechange-3d {
 	    padding-top: 5%;
+	}
+	.imgchange-2 {
+	    font-size: 16px;
+	    margin-top: 10%;
 	}
 }
 

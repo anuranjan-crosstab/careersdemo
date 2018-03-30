@@ -149,3 +149,44 @@ body {
     border: 2px solid #FDCC04;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.jobs-qualification {
+	line-height: 2em;
+}
+
+.back-job .glyphicon {
+	min-width: 7%;
+}
+
+.back-job p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 7%;
+}
+
+@media screen and (max-width: 767px) {
+	.back-job {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.jobs-title {
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	.description-back {
+    	padding-top: 20px;
+	}
+	.title-inner h1 {
+		font-weight: 300;
+	}
+	.back-job .glyphicon {
+		min-width: 17%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.back-job {
+	    margin-left: 6%;
+	    margin-right: 6%;
+	}
+}

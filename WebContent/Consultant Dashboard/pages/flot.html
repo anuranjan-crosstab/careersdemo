@@ -301,16 +301,15 @@
                                     <div class="row">
                                         <div class="form-group col-md-6 col-lg-4">
                                             <label for="">Country</label>
-                                            <select class="form-control" id="countrys" 
-                                                ></select>
-
+                                            <select class="form-control" id="countrys">
+                                                
+                                            </select>
                                         </div>
                                         <div class="col-lg-4 col-md-2"></div>
                                         <div class="form-group col-md-4">
-                                            <label for="">Course
-                                                Type</label> <select class="form-control"
-                                                ><option>Specify
-                                                    Your Course Type</option>
+                                            <label for="">Course Type</label>
+                                            <select class="form-control"
+                                                ><option>Specify Your Course Type</option>
                                                 <option>Part Time</option>
                                                 <option>Full Time</option>
                                                 <option>Correspondence</option>
@@ -457,7 +456,7 @@
                         min: 2,
                     },
                         notEmpty: {
-                        message: 'Please supply your first name'
+                        message: 'Please supply candidate first name'
                     }
                 }
             },
@@ -467,14 +466,14 @@
                         min: 2,
                     },
                     notEmpty: {
-                        message: 'Please supply your last name'
+                        message: 'Please supply candidate last name'
                     }
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'Please supply your email address'
+                        message: 'Please supply candidate email address'
                     },
                     emailAddress: {
                         message: 'Please supply a valid email address'
@@ -484,7 +483,7 @@
             phone: {
                 validators: {
                     notEmpty: {
-                        message: 'Please supply your phone number'
+                        message: 'Please supply candidate phone number'
                     },
                     phone: {
                         country: 'US',
@@ -498,7 +497,7 @@
                         min: 8,
                     },
                     notEmpty: {
-                        message: 'Please supply your street address'
+                        message: 'Please supply candidate street address'
                     }
                 }
             },
@@ -515,7 +514,7 @@
             state: {
                 validators: {
                     notEmpty: {
-                        message: 'Please select your state'
+                        message: 'Please select candidate state'
                     }
                 }
             },
@@ -530,6 +529,27 @@
                 validators: {
                     notEmpty: {
                         message: 'Please select candidate work experience'
+                    }
+                }
+            },
+            bgrad: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select candidate graduation'
+                    }
+                }
+            },
+            industry: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select candidate current industry'
+                    }
+                }
+            },
+            function: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select candidate area of specialisation'
                     }
                 }
             },
