@@ -465,7 +465,26 @@ select{
 }
 
 .outer-2 {
-	max-height: 500px;
+	max-height: 470px;
 	min-height: 200px;
 	overflow: auto;
+}
+
+#job-head {
+	text-align: center;
+	font-size: 2em;
+	color: #ffffff;
+	-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    padding-top: 10px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px black;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px black;}
 }

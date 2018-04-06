@@ -919,4 +919,37 @@ $(document).ready(function() {
     //trigger our scroll event on initial load
   $(window).trigger('scroll');
 
+  //jubilant core values
+  					$('.col-is-1').hover(function() {
+						$('.banner').css("background-color", "#2957A4");
+						$('.banner h2').css("color", "#ffffff");
+					}, function() {
+						$('.banner').css("background-color", "#ffffff");
+						$('.banner h2').css("color", "#000000");
+					});
+
+					$('.col-is-2').hover(function() {
+						$('.banner').css("background-color", "#8EC858");
+						$('.banner h2').css("color", "#ffffff");
+					}, function() {
+						$('.banner').css("background-color", "#ffffff");
+						$('.banner h2').css("color", "#000000");
+					});
+
+					$('.col-is-3').hover(function() {
+						$('.banner').css("background-color", "#FFDE1F");
+						$('.banner h2').css("color", "#ffffff");
+					}, function() {
+						$('.banner').css("background-color", "#ffffff");
+						$('.banner h2').css("color", "#000000");
+					});
+
+					$('.col-is-4').hover(function() {
+						$('.banner').css("background-color", "#364086");
+						$('.banner h2').css("color", "#ffffff");
+					}, function() {
+						$('.banner').css("background-color", "#ffffff");
+						$('.banner h2').css("color", "#000000");
+					});
+
 });

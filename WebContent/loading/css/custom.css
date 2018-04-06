@@ -1,0 +1,109 @@
+@import
+	url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css)
+	;
+
+@import
+	url("https://fonts.googleapis.com/css?family=Lato:300,400,700,300i,400i,700i")
+	;
+/*basic reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	/* Chrome 10-25, Safari 5.1-6 */
+}
+
+body {
+	font-family: "Lato", Arial, Helvetica, sans-serif;
+	background: transparent;
+}
+
+body > div.container {
+  padding: 50px 0;
+  position: relative;
+}
+div.container iframe {
+	position: absolute;
+	top: 75px;
+	right: 0;
+}
+h2 {
+	margin-top: 40px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+p.spacer {
+	height: 5px;
+	overflow: hidden;
+}
+table td:first-child {
+	width: 125px;
+}
+li strong {
+	color: #111;
+}
+.btn.btn-large {
+	float: right;
+	margin-top: 40px;
+}
+
+#myModal {
+	height: 60%;
+}
+
+#myModal h4 {
+	text-align: center;
+	font-size: 2em;
+}
+
+.modal .btn {
+	margin: 5% 3%;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: white; 
+    color: black;
+}
+
+.button2 {
+    background-color: #23b1ec;
+    color: white;
+    border: 2px solid #23b1ec;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button3:hover {
+    background-color: white; 
+    color: black;
+}
+
+.button3 {
+    background-color: #80bb2d;
+    color: white;
+    border: 2px solid #80bb2d;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button4:hover {
+    background-color: white;
+    color: black;
+}
+
+.button4 {
+	background-color: #FDCC04;
+	color: #ffffff;
+    border: 2px solid #FDCC04;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

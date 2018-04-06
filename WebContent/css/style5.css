@@ -387,8 +387,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 .banner {
-	background: #80bb2d;
-	background: linear-gradient(#8CCE32, #91C763, #94BA6E, #80bb2d);
+	//background: #80bb2d;
+	//background: linear-gradient(#8CCE32, #91C763, #94BA6E, #80bb2d);
+	background-color: rgb(255, 255, 255);
 	color: rgba(255, 255, 255, 0.75);
 	padding: 2.5rem 0 2.5rem 0;
 	text-align: center;
@@ -396,8 +397,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 .banner h2 {
+	color: rgb(0, 0, 0);
 	font-size: 3.75rem;
 	margin-top: 10px;
+	font-weight: 200;
 }
 
 @media only screen and (max-width : 991px) and (min-width: 768px) {
@@ -1645,11 +1648,13 @@ transform:rotateY(180deg);
 	background-color: #ffffff;
 	height: 83vh;
 	border-right: solid 1px #dad8d8;
+	font-weight: 200;
 }
 
 .col-is-4 {
 	background-color: #ffffff;
-	height: 83vh;	
+	height: 83vh;
+	font-weight: 200;	
 }
 
 .col-is-1:hover {
