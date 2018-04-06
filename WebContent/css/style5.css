@@ -363,62 +363,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	}
 }
 
-.upper-write h3 {
-	font-size: 45px;
-	display:inline-block;
-	background-color: #23b1ec;
-	color: #ffffff;
-	padding: 8px;
-}
-
-.lower-write h3 {
-	font-size: 45px;
-	display:inline-block;
-	background-color: #80bb2d;
-	color: #ffffff;
-	padding: 8px;
-}
-
-@media screen and (max-width: 1199px) and (min-width: 992px) {
-		.upper-write h3 {
-			font-size: 42px;
-			padding: 10px;
-		}
-
-		.lower-write h3 {
-			font-size: 42px;
-			padding: 10px;
-			margin-top: 0px;
-		}
-}
-
-@media only screen and (max-width : 991px) and (min-width: 768px) {
-	.upper-write h3 {
-		font-size: 40px;
-		padding: 10px;
-	}
-
-	.lower-write h3 {
-		font-size: 40px;
-		padding: 10px;
-		margin-top: 0px;
-	}
-}
-
-@media only screen and (max-width : 767px) {
-	.upper-write h3 {
-		font-size: 20px;
-		padding: 4px;
-	}
-
-	.lower-write h3 {
-		font-size: 20px;
-		padding: 4px;
-		margin-top: 0px;
-	}
-}
-
-
 .container.slider-slide-2 {
     position: absolute;
     bottom: 160px;
