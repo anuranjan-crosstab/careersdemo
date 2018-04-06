@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jubilant Career</title>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background:url('./images/leader.jpg'); background-repeat: no-repeat; background-size: cover;">
+	<main>
+	<h1 align="center">Leadership Speak</h1>
+		<div id="full"></div>
+	<div class="main">
+		<div id="cbp-qtrotator" class="cbp-qtrotator">
+			<div class="cbp-qtcontent current"> <img src="./images/raju.jpg" alt="img01" />
+				<blockquote>
+					<p>"Jubilant Life Sciences is by far the best place to work for numerous reasons, first and foremost, the culture of the organization thrives on valuing employees through recognition programs and regular incentives."</p>
+					<footer style="background-color: #80bb2d">Dr. Raju Sunil Mistry, Chief Human Resources Officer</footer>
+				</blockquote>
+			</div>
+			<div class="cbp-qtcontent"> <img src="./images/steve.jpg" alt="img02" />
+				<blockquote>
+					<p>"The internal work environment at Jubilant Life Sciences far exceeds any other corporation. Jubilant stresses the importance of family, if an employee needs time off for family emergencies and such, it will happen, you are encouraged to take care of your family."</p>
+					<footer style="background-color: #80bb2d">Steve Hutchins, President - Drug Discovery Solutions</footer>
+				</blockquote>
+			</div>
+			<span class="cbp-qtprogress"></span> </div>
+		</div>
+		<!-- / main --> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+			//Quotes rotator
+			var divs = $('.cbp-qtcontent');
+			
+			function fade() {
+				var current = $('.current');
+				var currentIndex = divs.index(current),
+				nextIndex = currentIndex + 1;
+				
+				if (nextIndex >= divs.length) {
+					nextIndex = 0;
+				}
+				
+				var next = divs.eq(nextIndex);
+				
+				next.stop().fadeIn(1500, function() {
+					$(this).addClass('current');
+				});
+				
+				current.stop().fadeOut(1500, function() {
+					$(this).removeClass('current');
+					_startProgress()
+					setTimeout(fade, 8000);
+				});
+			}
+			
+			function _startProgress(){
+				$(".cbp-qtprogress").removeAttr('style');
+				$(".cbp-qtprogress").animate({
+					width:"800px",
+				} , 8000);
+			}
+			
+			_startProgress()
+			setTimeout(fade, 8000);
+		});
+	</script>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+	</main>
+</body>
+</html>

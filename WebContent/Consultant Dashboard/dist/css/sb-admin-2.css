@@ -647,6 +647,7 @@ select{
   font-family: FontAwesome, sans-serif;
 }
 
-.radio {
+.radio, .checkbox {
     margin-left: 25px;
+    font-weight: 400;
 }
