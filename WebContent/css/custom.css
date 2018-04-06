@@ -462,6 +462,7 @@ select{
 .choice {
     text-align: left;
     padding-left: 25px;
+    font-weight: 400;
 }
 
 .outer-2 {
