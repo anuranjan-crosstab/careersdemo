@@ -239,3 +239,9 @@ fieldset {
     margin-bottom: 45px;
     min-width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+	.arrange {
+		margin-top: 30px;
+	}
+}

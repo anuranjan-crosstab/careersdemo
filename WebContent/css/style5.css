@@ -1474,6 +1474,13 @@ div#OR {
 	}
 }
 
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+	#myBtn {
+		width: 8%;
+		height: 6%;
+	}
+}
+
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }

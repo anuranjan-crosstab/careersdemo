@@ -407,6 +407,12 @@ body {
 	overflow: auto;
 }
 
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+	.outer {
+		height: 700px;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	#progressbar .li1, #progressbar .li2, #progressbar .li3, #progressbar .li4, 
 	#progressbar .li5, #progressbar .li6 {
