@@ -1816,3 +1816,13 @@ transform:rotateY(180deg);
 		background-color: #0D3B9C;
 	}
 }
+
+/*@media only screen and (min-width: 768px) and (min-height: 1024px) {
+	.col-is-1, .col-is-2, .col-is-3, .col-is-4 {
+		height: 60vh;
+	}
+	.cbp-qtrotator {
+		width: 80%;
+		margin-left: 
+	}
+}*/
