@@ -1810,6 +1810,7 @@ transform:rotateY(180deg);
     float: none;
   
 }
+}
 
 @media screen and (max-width: 767px) {
 	.navbar-default .navbar-collapse {
@@ -1817,12 +1818,30 @@ transform:rotateY(180deg);
 	}
 }
 
-/*@media only screen and (min-width: 768px) and (min-height: 1024px) {
-	.col-is-1, .col-is-2, .col-is-3, .col-is-4 {
-		height: 60vh;
-	}
-	.cbp-qtrotator {
-		width: 80%;
-		margin-left: 
-	}
-}*/
+.navbar-login
+{
+    width: 205px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+
+#usr_name {
+	font-size: 1.3em;
+}
