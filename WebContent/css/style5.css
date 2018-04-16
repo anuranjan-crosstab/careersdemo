@@ -1517,7 +1517,7 @@ div#OR {
 @media screen and (max-width: 767px) {
 	.slide-caption .caption-content h2 {
 	    font-size: 200%;
-	    padding: 0 10px;
+	    padding-right: 10px;
 	}
 	.slide-caption .caption-content p {
 		font-size: 100%;
