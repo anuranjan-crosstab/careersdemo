@@ -1727,6 +1727,15 @@ transform:rotateY(180deg);
 	}
 }
 
+@media only screen and (max-width : 991px) and (min-width: 768px) {
+	.imgchange-2 {
+		font-size: 22px;
+	}
+	.col-is-1, .col-is-2, .col-is-3, .col-is-4 {
+		height: 75vh;
+	}
+}
+
 .demo-tbl {
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
 	border-radius: 20px;

@@ -878,7 +878,7 @@
 	            }, 'json');
 	        });
 	});
-if($(window).width() >= 1024){
+
 /*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
 $(document).ready(function() {
 
@@ -953,4 +953,3 @@ $(document).ready(function() {
 					});
 
 });
-}
