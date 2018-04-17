@@ -392,7 +392,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	background-color: rgb(255, 255, 255);
 	color: rgba(255, 255, 255, 0.75);
 	padding: 2.5rem 0 2.5rem 0;
-	text-align: center;
+	//text-align: center;
 	height: 17vh;
 }
 
@@ -401,6 +401,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	font-size: 3.75rem;
 	margin-top: 10px;
 	font-weight: 200;
+	text-align: center;
 }
 
 @media only screen and (max-width : 991px) and (min-width: 768px) {
@@ -743,6 +744,9 @@ height: 300px;
 @media only screen and (max-width : 991px){
 	.footer-list {
 		margin-top: 20px;
+		//text-align: center;
+	}
+	.footer-list h3 {
 		text-align: center;
 	}
 	.footer-list h4 {
@@ -1142,7 +1146,7 @@ li {
 
 .emp-head {
 	padding: 2rem 0 0 0;
-	text-align: center;
+	//text-align: center;
 	cursor: default;
 	margin-bottom: 3rem;
 	width: 42.5rem;
@@ -1154,6 +1158,7 @@ li {
 .emp-head h2 {
 	color: #ffffff;
 	font-size: 3.75rem;
+	text-align: center;
 	text-shadow: 0 0 3px #344B14;
 }
 
