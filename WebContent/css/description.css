@@ -1,5 +1,5 @@
 @import
-	url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css)
+	url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css)
 	;
 
 @import
@@ -52,7 +52,7 @@ body {
 	text-align: center;
 	padding-top: 0px;
 	text-transform: uppercase;
-	font-family: 'Gotham-Book',Arial,Helvetica,sans-serif;
+	//font-family: 'Gotham-Book',Arial,Helvetica,sans-serif;
 	color: #ffffff;
 	padding-bottom: 4%;
 }
@@ -68,24 +68,25 @@ body {
 	margin-right: 10%;
 }
 .jobs-title {
-	font-size: 25px;
+	font-size: 32px;
 	text-transform: uppercase;
+	font-weight: 500;
 }
 
 .job-summary {
 	margin: 20px 0;
 	border-bottom: 1px dashed #ccc;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	font-size: 20px;
 }
 
 .jobs-location, .jobs-designation, .jobs-qualification, .jobs-skills, .jobs-experience, .jobs-positions {
     margin-bottom: 15px;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
- .jobs-location .qualification,  .jobs-location .skills,  .jobs-designation .qualification,  .jobs-designation .skills,  .jobs-qualification .qualification,  .jobs-qualification .skills,  .jobs-skills .qualification,  .jobs-skills .skills,  .jobs-experience .qualification,  .jobs-experience .skills,  .jobs-positions .qualification,  .jobs-positions .skills {
+ .jobs-location .qualification,  .jobs-location .skill,  .jobs-designation .qualification,  .jobs-designation .skill,  .jobs-qualification .qualification,  .jobs-qualification .skill,  .jobs-skills .qualification,  .jobs-skills .skill,  .jobs-experience .qualification,  .jobs-experience .skill,  .jobs-positions .qualification,  .jobs-positions .skill {
     margin-bottom: 15px;
 }
 
@@ -177,7 +178,8 @@ body {
     	padding-top: 20px;
 	}
 	.title-inner h1 {
-		font-weight: 300;
+		font-weight: 500;
+		font-size: 28px;
 	}
 	.back-job .glyphicon {
 		min-width: 17%;
@@ -188,5 +190,18 @@ body {
 	.back-job {
 	    margin-left: 6%;
 	    margin-right: 6%;
+	}
+}
+
+.back-job i {
+	margin-right: 5%;
+	width: 2%;
+	font-size: large;
+	color: #23b1ec;
+}
+
+@media screen and (max-width: 767px) {
+	.back-job i {
+		margin-right: 10%;
 	}
 }
