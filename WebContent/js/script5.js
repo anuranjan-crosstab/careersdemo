@@ -953,3 +953,48 @@ $(document).ready(function() {
 					});
 
 });
+
+$(document).ready(function(){
+  var passOne = $("#passOne").val();
+  var passTwo = $("#passTwo").val();
+  
+  $("#footerText").html("Fields don't match");
+  
+  var checkAndChange = function()
+  {
+    if(passOne.length < 1){
+      if($("#footer-foot").hasClass("correct")){
+        $("#footer-foot").removeClass("correct").addClass("incorrect");
+        $("#footerText").html("Password don't match");
+      }else{
+        $("#footerText").html("Password don't match");
+      }
+    }
+    else if($("#footer-foot").hasClass("incorrect"))
+    {
+      if(passOne == passTwo){
+        $("#footer-foot").removeClass("incorrect").addClass("correct");
+        $("#footerText").html("Continue");
+      }
+    }
+    else
+    {
+      if(passOne != passTwo){
+        $("#footer-foot").removeClass("correct").addClass("incorrect");
+        $("#footerText").html("Password don't match");
+      } 
+    }   
+  }
+  
+  
+  
+  $("input").keyup(function(){
+    var newPassOne = $("#passOne").val();
+    var newPassTwo = $("#passTwo").val();
+    
+    passOne = newPassOne;
+    passTwo = newPassTwo;
+    
+    checkAndChange();
+  });
+});
