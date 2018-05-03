@@ -1901,9 +1901,9 @@ transform:rotateY(180deg);
 }
 #header
 {
-  background-color:#F26B6B;
+  background-color:#09479C;
   //font-family: 'Francois One', sans-serif;
-  height:75px;
+  height:70px;
   width:300px;
   position:absolute;
   top:0;
@@ -1918,7 +1918,7 @@ transform:rotateY(180deg);
 {
   background-color:#F26B6B;
   font-family: 'Francois One', sans-serif;
-  height:75px;
+  height:70px;
   width:300px;
   position:absolute;
   bottom:0;
@@ -1933,7 +1933,7 @@ transform:rotateY(180deg);
 {
   background-color:#84F075;
   font-family: 'Francois One', sans-serif;
-  height:75px;
+  height:70px;
   width:300px;
   position:absolute;
   bottom:0;
@@ -1982,4 +1982,10 @@ input#passTwo
   border-radius:0px 0px 15px 15px;
   -webkit-border-radius:0px 0px 15px 15px;
   -moz-border-radius:0px 0px 15px 15px;
+}
+
+#section5 {
+	background:url('../images/leader.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
