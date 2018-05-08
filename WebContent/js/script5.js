@@ -1068,3 +1068,7 @@ function scrollThis(event, delta, deltaX, deltaY) {
 }
 
 $(document).mousewheel(scrollThis);
+
+$(function(){
+    $('.selectpicker').selectpicker();
+});

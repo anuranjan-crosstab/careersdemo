@@ -1989,3 +1989,17 @@ input#passTwo
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.selectpicker {
+	margin-left: 50px;
+	margin-top: 25px;
+	height: 30px;
+	width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+	.selectpicker {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+}
