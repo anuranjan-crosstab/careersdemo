@@ -1098,6 +1098,8 @@ li {
     overflow: hidden;
     z-index: 1;
     position: relative;
+    height: 120px;
+    width: 120px;
 }
 .testimonial .pic img{
     width: 100%;
@@ -1115,9 +1117,9 @@ li {
     font-size: 14px;
     color: #ffd9b8;
 }
-.owl-theme .owl-controls{
+/*.owl-theme .owl-controls{
     margin-top: 4%;
-}
+}*/
 .owl-theme .owl-controls .owl-page span{
     width: 32px;
     height: 10px;
@@ -1137,7 +1139,7 @@ li {
 }
 
 .owl-wrapper {
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 }
 
 .emp {
@@ -1998,6 +2000,10 @@ input#passTwo
 	background-color: transparent;
 	border-radius: 10px;
 	color: #ffffff;
+}
+
+.selectpicker option {
+	color: #000000;
 }
 
 @media screen and (max-width: 767px) {
